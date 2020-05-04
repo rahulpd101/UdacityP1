@@ -19,15 +19,15 @@ which have __O(n)__ time complexity. Though they add up to some value of `x * O(
 simplifying them into `O(n)`.
 
 *Task3*
-This takes runs in __O(n log n)__, due to the fact that we find list sorting operations, which have
-a time complexity of __O(n log n)__. In the code we find many operations that are __O(1)__ as
-the different elements are modified. Additionally there are several _full scans thorough the lists_,
-which have __O(n)__ time complexity. Though they all add up to some value of `x * O(n) + `O(n log n)`,
-we end up simplifying them into `O(n log n)`.
+This takes runs in __O(n)__, due to the fact that we find list sorting operations, which have
+a time complexity of __O(n)__. In the code we find many operations that are __O(1)__ as
+the different elements are modified. Additionally there are several _full scans thorough the sets_,
+which have __O(1)__ time complexity in this case. Though they all add up to some value of `x * O(n)`,
+we end up simplifying them into `O(n)`.
 
 *Task4*
-This takes runs in __O(n log n)__, due to the fact that we find list sorting operations, which have
-a time complexity of __O(n log n)__. In the code we find many operations that are __O(1)__ as
-the different elements are modified. Additionally there are several _full scans thorough the lists_,
-which have __O(n)__ time complexity. Though they all add up to some value of `x * O(n) + `O(n log n)`,
-we end up simplifying them into `O(n log n)`.
+This takes runs in __O(n)__, due to the fact that we find list sorting operations, which have
+a time complexity of __O(n)__. In the code we find many operations that are __O(1)__ as
+the different elements are modified. Additionally there are several _full scans thorough the sets_,
+which have __O(1)__ time complexity in this case. Though they all add up to some value of `x * O(n)`,
+we end up simplifying them into `O(n)`.
