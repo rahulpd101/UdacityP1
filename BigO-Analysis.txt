@@ -22,12 +22,12 @@ simplifying them into `O(n)`.
 This takes runs in __O(nlogn)__, due to the fact that we find list sorting operations, which have
 a time complexity of __O(n)__. In the code we find many operations that are __O(1)__ as
 the different elements are modified. Additionally there are several _full scans thorough the sets_,
-which have __O(1)__ time complexity in this case. Though they all add up to some value of `x * O(n)`,
+which have __O(1)__ time complexity in this case. Though they all add up to some value of `x * O(n) * O(nlogn)`,
 we end up simplifying them into `O(nlogn)`.
 
 *Task4*
 This takes runs in __O(nlogn)__, due to the fact that we find list sorting operations, which have
 a time complexity of __O(n)__. In the code we find many operations that are __O(1)__ as
 the different elements are modified. Additionally there are several _full scans thorough the sets_,
-which have __O(1)__ time complexity in this case. Though they all add up to some value of `x * O(n)`,
+which have __O(1)__ time complexity in this case. Though they all add up to some value of `x * O(n) * O(nlogn)`,
 we end up simplifying them into `O(nlogn)`.
