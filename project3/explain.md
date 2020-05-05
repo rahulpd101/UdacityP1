@@ -24,7 +24,7 @@ The sqrt() functions uses the [Babylonian method](https://en.wikipedia.org/wiki/
 ) as described in the Wikipedia article. This performed slightly better then a binary method for large numbers. There was tweaking done in both methods, however, if the binary method was not tweaked to begin at the mid-point it performed significantly worse on larger numbers. I believe it performs better then binary due to converging on the answer faster.
 
 ### Big O Space Complexity
-Since recursion was avoided space complexity is added by the additional variables used in the function. There is one float and three integer variables, although one is a counter to keep track of the number of iterations during testing. This is not needed and could be eliminated. Space complexity should be O(n) where n is the number of variables in the function which is five including the number passed into the function.
+Since recursion was avoided space complexity is added by the additional variables used in the function. There is one float and three integer variables, although one is a counter to keep track of the number of iterations during testing. This is not needed and could be eliminated. Space complexity should be O(1).
 
 ### Big O Time Complexity
 This appears to be a candidate for recursion, but was done with iteration and avoids the overhead of recursion. The Babylonian method also has less operations to perform then the binary method in the core process. It should perform O(log n) where n is the input number to the function.
@@ -36,7 +36,7 @@ This appears to be a candidate for recursion, but was done with iteration and av
 Before it embarks on a binary search the first thing that happens is to check the first, middle and last index position for the target value. If it exist in one of those positions then it returns the respective index. If not it proceeds to partition the input list by iteratively narrowing the partition to find the pivot point. Once the pivot point is found it then performs a binary search.
 
 ### Big O Space Complexity
-Both finding the pivot point and the binary search require a pointer to the list as well as the first and last pointers. It takes O(n) space to store the list plus the additional variables.
+Both finding the pivot point and the binary search require a pointer to the list as well as the first and last pointers. Each call uses O(1) space, the maximum depth of the recursive tree is O(logn) so the space complexity is O(logn).
 
 ### Big O Time Complexity
 Finding the pivot point is similar to a binary search as both begin by halving the list through each iteration and continuing  dividing it in half until we find the pivot point or the target value. Both should operate in O(log n), where n is the input size of the array/list. If the target value is found in the first, middle or last position within the list then it operates at O(1) best case. 
@@ -63,7 +63,7 @@ Merge sort has a worst case time complexity of O(n log(n)).
 The algorithm steps through the input list using a three-way partitioning of the array. Comparing items in the list to the middle value, the ones, it swaps the elements moving the zeroes to the beginning and the twos towards the end. 
 
 ### Big O Space Complexity
-Uses three additional integers for keeping track of the low, mid and high points in the list plus one to hold the middle value for a total of four and, of course, a copy of the input list/array: O(n). Through the magic of Python, C really, we are able to swap elements without the need for a temp variable to hold one of the items to swap. 
+Uses three additional integers for keeping track of the low, mid and high points in the list plus one to hold the middle value for a total of four and, of course, a copy of the input list/array: O(1). Through the magic of Python, C really, we are able to swap elements without the need for a temp variable to hold one of the items to swap. 
 
 ### Big O Time Complexity
 Iterates through the list one time to complete the swaps: O(n) where n is the number of elements in the list.
